@@ -62,7 +62,41 @@ PRODUCT_COPY_FILES += \
     vendor/google/killrom/system/lib/libspeexwrapper.so:$(PRODUCT_OUT)/system/lib/libspeexwrapper.so \
     vendor/google/killrom/system/lib/libvorbisencoder.so:$(PRODUCT_OUT)/system/lib/libvorbisencoder.so \
 
-#misc
+#usr
 PRODUCT_COPY_FILES += \
-    vendor/google/killrom/system/usr/srec/en-US:$(PRODUCT_OUT)/system/usr/srec/en-US \
-    vendor/google/killrom/system/vendor:$(PRODUCT_OUT)/system/vendor \
+    vendor/google/killrom/system/usr/srec/en-US/acoustic_model:$(PRODUCT_OUT)/system/usr/srec/en-US/acoustic_model \
+    vendor/google/killrom/system/usr/srec/en-US/c_fst:$(PRODUCT_OUT)/system/usr/srec/en-US/c_fst \
+    vendor/google/killrom/system/usr/srec/en-US/clg:$(PRODUCT_OUT)/system/usr/srec/en-US/clg \
+    vendor/google/killrom/system/usr/srec/en-US/compile_grammar.config:$(PRODUCT_OUT)/system/usr/srec/en-US/compile_grammar.config \
+    vendor/google/killrom/system/usr/srec/en-US/contacts.abnf:$(PRODUCT_OUT)/system/usr/srec/en-US/contacts.abnf \
+    vendor/google/killrom/system/usr/srec/en-US/dict:$(PRODUCT_OUT)/system/usr/srec/en-US/dict \
+    vendor/google/killrom/system/usr/srec/en-US/dictation.config:$(PRODUCT_OUT)/system/usr/srec/en-US/dictation.config \
+    vendor/google/killrom/system/usr/srec/en-US/embed_phone_nn_model:$(PRODUCT_OUT)/system/usr/srec/en-US/embed_phone_nn_model \
+    vendor/google/killrom/system/usr/srec/en-US/embed_phone_nn_state_sym:$(PRODUCT_OUT)/system/usr/srec/en-US/embed_phone_nn_state_sym \
+    vendor/google/killrom/system/usr/srec/en-US/endpointer_dictation.config:$(PRODUCT_OUT)/system/usr/srec/en-US/endpointer_dictation.config \
+    vendor/google/killrom/system/usr/srec/en-US/endpointer_voicesearch.config:$(PRODUCT_OUT)/system/usr/srec/en-US/endpointer_voicesearch.config \
+    vendor/google/killrom/system/usr/srec/en-US/ep_acoustic_model:$(PRODUCT_OUT)/system/usr/srec/en-US/ep_acoustic_model \
+    vendor/google/killrom/system/usr/srec/en-US/g2p_fst:$(PRODUCT_OUT)/system/usr/srec/en-US/g2p_fst \
+    vendor/google/killrom/system/usr/srec/en-US/google_hotword.config:$(PRODUCT_OUT)/system/usr/srec/en-US/google_hotword.config \
+    vendor/google/killrom/system/usr/srec/en-US/google_hotword_clg:$(PRODUCT_OUT)/system/usr/srec/en-US/google_hotword_clg \
+    vendor/google/killrom/system/usr/srec/en-US/google_hotword_logistic:$(PRODUCT_OUT)/system/usr/srec/en-US/google_hotword_logistic \
+    vendor/google/killrom/system/usr/srec/en-US/grammar.config:$(PRODUCT_OUT)/system/usr/srec/en-US/grammar.config \
+    vendor/google/killrom/system/usr/srec/en-US/hmmsyms:$(PRODUCT_OUT)/system/usr/srec/en-US/hmmsyms \
+    vendor/google/killrom/system/usr/srec/en-US/hotword_symbols:$(PRODUCT_OUT)/system/usr/srec/en-US/hotword_symbols \
+    vendor/google/killrom/system/usr/srec/en-US/lintrans_model:$(PRODUCT_OUT)/system/usr/srec/en-US/lintrans_model \
+    vendor/google/killrom/system/usr/srec/en-US/metadata:$(PRODUCT_OUT)/system/usr/srec/en-US/metadata \
+    vendor/google/killrom/system/usr/srec/en-US/normalizer:$(PRODUCT_OUT)/system/usr/srec/en-US/normalizer \
+    vendor/google/killrom/system/usr/srec/en-US/norm_fst:$(PRODUCT_OUT)/system/usr/srec/en-US/norm_fst \
+    vendor/google/killrom/system/usr/srec/en-US/offensive_word_normalizer:$(PRODUCT_OUT)/system/usr/srec/en-US/offensive_word_normalizer \
+    vendor/google/killrom/system/usr/srec/en-US/phonelist:$(PRODUCT_OUT)/system/usr/srec/en-US/phonelist \
+    vendor/google/killrom/system/usr/srec/en-US/rescoring_lm:$(PRODUCT_OUT)/system/usr/srec/en-US/rescoring_lm \
+    vendor/google/killrom/system/usr/srec/en-US/symbols:$(PRODUCT_OUT)/system/usr/srec/en-US/symbols \
+
+#vendor
+PRODUCT_COPY_FILES += \
+    vendor/google/killrom/system/vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.7/left_eye-y0-yi45-p0-pi45-r0-ri20.lg_32/full_model.bin:$(PRODUCT_OUT)/system/vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.7/left_eye-y0-yi45-p0-pi45-r0-ri20.lg_32/full_model.bin \
+    vendor/google/killrom/system/vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.7/nose_base-y0-yi45-p0-pi45-r0-ri20.lg_32/full_model.bin:$(PRODUCT_OUT)/system/vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.7/nose_base-y0-yi45-p0-pi45-r0-ri20.lg_32/full_model.bin \
+    vendor/google/killrom/system/vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.7/right_eye-y0-yi45-p0-pi45-r0-ri20.lg_32-2/full_model.bin:$(PRODUCT_OUT)/system/vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.7/right_eye-y0-yi45-p0-pi45-r0-ri20.lg_32-2/full_model.bin \
+    vendor/google/killrom/system/vendor/pittpatt/models/detection/yaw_roll_face_detectors.6/head-y0-yi45-p0-pi45-r0-ri30.4a-v24/full_model.bin:$(PRODUCT_OUT)/system/vendor/pittpatt/models/detection/yaw_roll_face_detectors.6/head-y0-yi45-p0-pi45-r0-ri30.4a-v24/full_model.bin \
+    vendor/google/killrom/system/vendor/pittpatt/models/detection/yaw_roll_face_detectors.6/head-y0-yi45-p0-pi45-rn30-ri30.5-v24/full_model.bin:$(PRODUCT_OUT)/system/vendor/pittpatt/models/detection/yaw_roll_face_detectors.6/head-y0-yi45-p0-pi45-rn30-ri30.5-v24/full_model.bin \
+    vendor/google/killrom/system/vendor/pittpatt/models/detection/yaw_roll_face_detectors.6/head-y0-yi45-p0-pi45-rp30-ri30.5-v24/full_model.bin:$(PRODUCT_OUT)/system/vendor/pittpatt/models/detection/yaw_roll_face_detectors.6/head-y0-yi45-p0-pi45-rp30-ri30.5-v24/full_model.bin \
