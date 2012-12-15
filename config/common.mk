@@ -19,7 +19,7 @@ PRODUCT_COPY_FILES += \
     vendor/google/killrom/system/app/GoogleFeedback.apk:$(PRODUCT_OUT)/system/app/GoogleFeedback.apk \
     vendor/google/killrom/system/app/GoogleLoginService.apk:$(PRODUCT_OUT)/system/app/GoogleLoginService.apk \
     vendor/google/killrom/system/app/GooglePartnerSetup.apk:$(PRODUCT_OUT)/system/app/GooglePartnerSetup.apk \
-    vendor/google/gapps/system/app/QuickSearchBox.apk:$(PRODUCT_OUT)/system/app/QuickSearchBox.apk \
+    vendor/google/killrom/system/app/QuickSearchBox.apk:$(PRODUCT_OUT)/system/app/QuickSearchBox.apk \
     vendor/google/killrom/system/app/GoogleServicesFramework.apk:$(PRODUCT_OUT)/system/app/GoogleServicesFramework.apk \
     vendor/google/killrom/system/app/GoogleTTS.apk:$(PRODUCT_OUT)/system/app/MarketUpdater.apk \
     vendor/google/killrom/system/app/MediaUploader.apk:$(PRODUCT_OUT)/system/app/MediaUploader.apk \
