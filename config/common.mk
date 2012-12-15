@@ -32,7 +32,7 @@ PRODUCT_COPY_FILES += \
     vendor/google/killrom/system/app/Wallet.apk:$(PRODUCT_OUT)/system/app/Wallet.apk \
     vendor/google/killrom/system/app/VoiceSearchStub.apk:$(PRODUCT_OUT)/system/app/VoiceSearchStub.apk
 
-ifeq ($(TARGET_DEVICE),mako)
+ifeq ($(TARGET_PRODUCT),full_mako)
 PRODUCT_COPY_FILES += \
     vendor/google/killrom/system/app/GalleryGoogle.apk:$(PRODUCT_OUT)/system/app/GalleryGoogle.apk
 endif
@@ -105,7 +105,7 @@ PRODUCT_COPY_FILES += \
     vendor/google/killrom/system/vendor/pittpatt/models/detection/yaw_roll_face_detectors.6/head-y0-yi45-p0-pi45-rn30-ri30.5-v24/full_model.bin:$(PRODUCT_OUT)/system/vendor/pittpatt/models/detection/yaw_roll_face_detectors.6/head-y0-yi45-p0-pi45-rn30-ri30.5-v24/full_model.bin \
     vendor/google/killrom/system/vendor/pittpatt/models/detection/yaw_roll_face_detectors.6/head-y0-yi45-p0-pi45-rp30-ri30.5-v24/full_model.bin:$(PRODUCT_OUT)/system/vendor/pittpatt/models/detection/yaw_roll_face_detectors.6/head-y0-yi45-p0-pi45-rp30-ri30.5-v24/full_model.bin \
 
-ifeq ($(TARGET_DEVICE),grouper)
+ifeq ($(TARGET_PRODUCT),full_grouper)
 PRODUCT_COPY_FILES += \
     vendor/google/killrom/system/app/com.modaco.cameralauncher.apk:$(PRODUCT_OUT)/system/app/com.modaco.cameralauncher.apk
 endif
