@@ -13,7 +13,6 @@ PRODUCT_COPY_FILES += \
     vendor/google/killrom/system/app/Gmail.apk:$(PRODUCT_OUT)/system/app/Gmail.apk \
     vendor/google/killrom/system/app/GenieWidget.apk:$(PRODUCT_OUT)/system/app/GenieWidget.apk \
     vendor/google/killrom/system/app/ChromeBookmarksSyncAdapter.apk:$(PRODUCT_OUT)/system/app/ChromeBookmarksSyncAdapter.apk \
-    vendor/google/killrom/system/app/GalleryGoogle.apk:$(PRODUCT_OUT)/system/app/GalleryGoogle.apk \
     vendor/google/killrom/system/app/GoogleBackupTransport.apk:$(PRODUCT_OUT)/system/app/GoogleBackupTransport.apk \
     vendor/google/killrom/system/app/GoogleCalendarSyncAdapter.apk:$(PRODUCT_OUT)/system/app/GoogleCalendarSyncAdapter.apk \
     vendor/google/killrom/system/app/GoogleContactsSyncAdapter.apk:$(PRODUCT_OUT)/system/app/GoogleContactsSyncAdapter.apk \
@@ -33,9 +32,14 @@ PRODUCT_COPY_FILES += \
     vendor/google/killrom/system/app/Wallet.apk:$(PRODUCT_OUT)/system/app/Wallet.apk \
     vendor/google/killrom/system/app/VoiceSearchStub.apk:$(PRODUCT_OUT)/system/app/VoiceSearchStub.apk
 
+ifeq ($(TARGET_DEVICE),mako)
+PRODUCT_COPY_FILES += \
+    vendor/google/killrom/system/app/GalleryGoogle.apk:$(PRODUCT_OUT)/system/app/GalleryGoogle.apk
+endif
+
 #permissions
 PRODUCT_COPY_FILES += \
-    vendor/google/killrom/system/etc/preferred-apps:$(PRODUCT_OUT)/system/etc/preferred-apps \
+    vendor/google/killrom/system/etc/preferred-apps/google.xml:$(PRODUCT_OUT)/system/etc/preferred-apps/google.xml \
     vendor/google/killrom/system/etc/permissions/com.google.android.maps.xml:$(PRODUCT_OUT)/system/etc/permissions/com.google.android.maps.xml \
     vendor/google/killrom/system/etc/permissions/com.google.android.media.effects.xml:$(PRODUCT_OUT)/system/etc/permissions/com.google.android.media.effects.xml \
     vendor/google/killrom/system/etc/permissions/com.google.widevine.software.drm.xml:$(PRODUCT_OUT)/system/etc/permissions/com.google.widevine.software.drm.xml \
@@ -50,7 +54,7 @@ PRODUCT_COPY_FILES += \
 #libs
 PRODUCT_COPY_FILES += \
     vendor/google/killrom/system/lib/libfacelock_jni.so:$(PRODUCT_OUT)/system/lib/libfacelock_jni.so \
-    vendor/google/killrom/system/lib/libfilterpack_facedetect.so:$(PRODUCT_OUT)/system/lib/libfilterpack_facedetect.so
+    vendor/google/killrom/system/lib/libfilterpack_facedetect.so:$(PRODUCT_OUT)/system/lib/libfilterpack_facedetect.so \
     vendor/google/killrom/system/lib/libfrsdk.so:$(PRODUCT_OUT)/system/lib/libfrsdk.so \
     vendor/google/killrom/system/lib/libgcomm_jni.so:$(PRODUCT_OUT)/system/lib/libgcomm_jni.so \
     vendor/google/killrom/system/lib/libgoogle_recognizer_jni.so:$(PRODUCT_OUT)/system/lib/libgoogle_recognizer_jni.so \
@@ -100,3 +104,8 @@ PRODUCT_COPY_FILES += \
     vendor/google/killrom/system/vendor/pittpatt/models/detection/yaw_roll_face_detectors.6/head-y0-yi45-p0-pi45-r0-ri30.4a-v24/full_model.bin:$(PRODUCT_OUT)/system/vendor/pittpatt/models/detection/yaw_roll_face_detectors.6/head-y0-yi45-p0-pi45-r0-ri30.4a-v24/full_model.bin \
     vendor/google/killrom/system/vendor/pittpatt/models/detection/yaw_roll_face_detectors.6/head-y0-yi45-p0-pi45-rn30-ri30.5-v24/full_model.bin:$(PRODUCT_OUT)/system/vendor/pittpatt/models/detection/yaw_roll_face_detectors.6/head-y0-yi45-p0-pi45-rn30-ri30.5-v24/full_model.bin \
     vendor/google/killrom/system/vendor/pittpatt/models/detection/yaw_roll_face_detectors.6/head-y0-yi45-p0-pi45-rp30-ri30.5-v24/full_model.bin:$(PRODUCT_OUT)/system/vendor/pittpatt/models/detection/yaw_roll_face_detectors.6/head-y0-yi45-p0-pi45-rp30-ri30.5-v24/full_model.bin \
+
+ifeq ($(TARGET_DEVICE),grouper)
+PRODUCT_COPY_FILES += \
+    vendor/google/killrom/system/app/com.modaco.cameralauncher.apk:$(PRODUCT_OUT)/system/app/com.modaco.cameralauncher.apk
+endif
