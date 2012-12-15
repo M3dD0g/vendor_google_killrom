@@ -9,7 +9,7 @@ PRODUCT_COPY_FILES += \
     vendor/google/killrom/system/app/Music2.apk:$(PRODUCT_OUT)/system/app/Music2.apk \
     vendor/google/killrom/system/app/GoogleEars.apk:$(PRODUCT_OUT)/system/app/GoogleEars.apk \
     vendor/google/killrom/system/app/GmsCore.apk:$(PRODUCT_OUT)/system/app/GmsCore.apk \
-    vendor/google/killrom/system/app/Facelock.apk:$(PRODUCT_OUT)/system/app/Facelock.apk \
+    vendor/google/killrom/system/app/FaceLock.apk:$(PRODUCT_OUT)/system/app/FaceLock.apk \
     vendor/google/killrom/system/app/Gmail.apk:$(PRODUCT_OUT)/system/app/Gmail.apk \
     vendor/google/killrom/system/app/GenieWidget.apk:$(PRODUCT_OUT)/system/app/GenieWidget.apk \
     vendor/google/killrom/system/app/ChromeBookmarksSyncAdapter.apk:$(PRODUCT_OUT)/system/app/ChromeBookmarksSyncAdapter.apk \
@@ -28,7 +28,7 @@ PRODUCT_COPY_FILES += \
     vendor/google/killrom/system/app/Phonesky.apk:$(PRODUCT_OUT)/system/app/Phonesky.apk \
     vendor/google/killrom/system/app/SetupWizard.apk:$(PRODUCT_OUT)/system/app/SetupWizard.apk \
     vendor/google/killrom/system/app/Talk.apk:$(PRODUCT_OUT)/system/app/Talk.apk \
-    vendor/google/killrom/system/app/LatinImeDictionary.apk:$(PRODUCT_OUT)/system/app/GalleryGoogle.apk \
+    vendor/google/killrom/system/app/LatinImeDictionary.apk:$(PRODUCT_OUT)/system/app/LatinImeDictionary.apk \
     vendor/google/killrom/system/app/Wallet.apk:$(PRODUCT_OUT)/system/app/Wallet.apk \
     vendor/google/killrom/system/app/VoiceSearchStub.apk:$(PRODUCT_OUT)/system/app/VoiceSearchStub.apk
 
