@@ -2,6 +2,7 @@
 # Get Those G Apps
 #apps
 PRODUCT_COPY_FILES += \
+    vendor/google/killrom/system/app/OccamQuickOffice.apk:$(PRODUCT_OUT)/system/app/OccamQuickOffice.apk \
     vendor/google/killrom/system/app/LatinIME.apk:$(PRODUCT_OUT)/system/app/LatinIME.apk \
     vendor/google/killrom/system/app/StreetView.apk:$(PRODUCT_OUT)/system/app/StreetView.apk \
     vendor/google/killrom/system/app/Maps.apk:$(PRODUCT_OUT)/system/app/Maps.apk \
