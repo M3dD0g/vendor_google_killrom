@@ -65,6 +65,8 @@ PRODUCT_COPY_FILES += \
     vendor/google/killrom/system/lib/libpatts_engine_jni_api.so:$(PRODUCT_OUT)/system/lib/libpatts_engine_jni_api.so \
     vendor/google/killrom/system/lib/libspeexwrapper.so:$(PRODUCT_OUT)/system/lib/libspeexwrapper.so \
     vendor/google/killrom/system/lib/libvorbisencoder.so:$(PRODUCT_OUT)/system/lib/libvorbisencoder.so \
+    vendor/google/killrom/system/lib/libpicowrapper.so:$(PRODUCT_OUT)/system/lib/libpicowrapper.so \
+    vendor/google/killrom/system/lib/libvoicesearch.so:$(PRODUCT_OUT)/system/lib/libvoicesearch.so \
 
 #usr
 PRODUCT_COPY_FILES += \
