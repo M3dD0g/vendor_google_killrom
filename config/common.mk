@@ -67,7 +67,7 @@ PRODUCT_COPY_FILES += \
     vendor/google/killrom/system/lib/libspeexwrapper.so:$(PRODUCT_OUT)/system/lib/libspeexwrapper.so \
     vendor/google/killrom/system/lib/libvorbisencoder.so:$(PRODUCT_OUT)/system/lib/libvorbisencoder.so \
     vendor/google/killrom/system/lib/libpicowrapper.so:$(PRODUCT_OUT)/system/lib/libpicowrapper.so \
-    vendor/google/killrom/system/lib/libvoicesearch.so:$(PRODUCT_OUT)/system/lib/libvoicesearch.so \
+    vendor/google/killrom/system/lib/libvoicesearch.so:$(PRODUCT_OUT)/system/lib/libvoicesearch.so
 
 #usr
 PRODUCT_COPY_FILES += \
@@ -97,7 +97,7 @@ PRODUCT_COPY_FILES += \
     vendor/google/killrom/system/usr/srec/en-US/offensive_word_normalizer:$(PRODUCT_OUT)/system/usr/srec/en-US/offensive_word_normalizer \
     vendor/google/killrom/system/usr/srec/en-US/phonelist:$(PRODUCT_OUT)/system/usr/srec/en-US/phonelist \
     vendor/google/killrom/system/usr/srec/en-US/rescoring_lm:$(PRODUCT_OUT)/system/usr/srec/en-US/rescoring_lm \
-    vendor/google/killrom/system/usr/srec/en-US/symbols:$(PRODUCT_OUT)/system/usr/srec/en-US/symbols \
+    vendor/google/killrom/system/usr/srec/en-US/symbols:$(PRODUCT_OUT)/system/usr/srec/en-US/symbols
 
 #vendor
 PRODUCT_COPY_FILES += \
@@ -106,7 +106,7 @@ PRODUCT_COPY_FILES += \
     vendor/google/killrom/system/vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.7/right_eye-y0-yi45-p0-pi45-r0-ri20.lg_32-2/full_model.bin:$(PRODUCT_OUT)/system/vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.7/right_eye-y0-yi45-p0-pi45-r0-ri20.lg_32-2/full_model.bin \
     vendor/google/killrom/system/vendor/pittpatt/models/detection/yaw_roll_face_detectors.6/head-y0-yi45-p0-pi45-r0-ri30.4a-v24/full_model.bin:$(PRODUCT_OUT)/system/vendor/pittpatt/models/detection/yaw_roll_face_detectors.6/head-y0-yi45-p0-pi45-r0-ri30.4a-v24/full_model.bin \
     vendor/google/killrom/system/vendor/pittpatt/models/detection/yaw_roll_face_detectors.6/head-y0-yi45-p0-pi45-rn30-ri30.5-v24/full_model.bin:$(PRODUCT_OUT)/system/vendor/pittpatt/models/detection/yaw_roll_face_detectors.6/head-y0-yi45-p0-pi45-rn30-ri30.5-v24/full_model.bin \
-    vendor/google/killrom/system/vendor/pittpatt/models/detection/yaw_roll_face_detectors.6/head-y0-yi45-p0-pi45-rp30-ri30.5-v24/full_model.bin:$(PRODUCT_OUT)/system/vendor/pittpatt/models/detection/yaw_roll_face_detectors.6/head-y0-yi45-p0-pi45-rp30-ri30.5-v24/full_model.bin \
+    vendor/google/killrom/system/vendor/pittpatt/models/detection/yaw_roll_face_detectors.6/head-y0-yi45-p0-pi45-rp30-ri30.5-v24/full_model.bin:$(PRODUCT_OUT)/system/vendor/pittpatt/models/detection/yaw_roll_face_detectors.6/head-y0-yi45-p0-pi45-rp30-ri30.5-v24/full_model.bin
 
 ifeq ($(TARGET_PRODUCT),full_grouper)
 PRODUCT_COPY_FILES += \
