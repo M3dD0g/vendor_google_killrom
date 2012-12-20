@@ -13,6 +13,8 @@ PRODUCT_COPY_FILES += \
     vendor/google/killrom/system/app/GmsCore.apk:$(PRODUCT_OUT)/system/app/GmsCore.apk \
     vendor/google/killrom/system/app/FaceLock.apk:$(PRODUCT_OUT)/system/app/FaceLock.apk \
     vendor/google/killrom/system/app/Gmail.apk:$(PRODUCT_OUT)/system/app/Gmail.apk \
+    vendor/google/killrom/system/app/EmailGoogle.apk:$(PRODUCT_OUT)/system/app/EmailGoogle.apk \
+    vendor/google/killrom/system/app/Exchange2Google.apk:$(PRODUCT_OUT)/system/app/Exchange2Google.apk \
     vendor/google/killrom/system/app/GenieWidget.apk:$(PRODUCT_OUT)/system/app/GenieWidget.apk \
     vendor/google/killrom/system/app/ChromeBookmarksSyncAdapter.apk:$(PRODUCT_OUT)/system/app/ChromeBookmarksSyncAdapter.apk \
     vendor/google/killrom/system/app/GoogleBackupTransport.apk:$(PRODUCT_OUT)/system/app/GoogleBackupTransport.apk \
