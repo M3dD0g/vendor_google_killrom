@@ -38,7 +38,12 @@ PRODUCT_COPY_FILES += \
 
 ifeq ($(TARGET_PRODUCT),full_mako)
 PRODUCT_COPY_FILES += \
-    vendor/google/killrom/system/app/GalleryGoogle.apk:$(PRODUCT_OUT)/system/app/GalleryGoogle.apk
+    vendor/google/killrom/system/app/mako/GalleryGoogle.apk:$(PRODUCT_OUT)/system/app/GalleryGoogle.apk
+endif
+
+ifneq ($(filter full_maguro full_toro,$(TARGET_PRODUCT)),)
+PRODUCT_COPY_FILES += \
+    vendor/google/killrom/system/app/tuna/GalleryGoogle.apk:$(PRODUCT_OUT)/system/app/GalleryGoogle.apk
 endif
 
 #permissions
