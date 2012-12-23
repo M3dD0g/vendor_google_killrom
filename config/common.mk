@@ -33,7 +33,6 @@ PRODUCT_COPY_FILES += \
     vendor/google/killrom/system/app/SetupWizard.apk:$(PRODUCT_OUT)/system/app/SetupWizard.apk \
     vendor/google/killrom/system/app/Talk.apk:$(PRODUCT_OUT)/system/app/Talk.apk \
     vendor/google/killrom/system/app/LatinImeDictionaryPack.apk:$(PRODUCT_OUT)/system/app/LatinImeDictionaryPack.apk \
-    vendor/google/killrom/system/app/Wallet.apk:$(PRODUCT_OUT)/system/app/Wallet.apk \
     vendor/google/killrom/system/app/VoiceSearchStub.apk:$(PRODUCT_OUT)/system/app/VoiceSearchStub.apk
 
 ifeq ($(TARGET_PRODUCT),full_mako)
@@ -41,9 +40,14 @@ PRODUCT_COPY_FILES += \
     vendor/google/killrom/system/app/mako/GalleryGoogle.apk:$(PRODUCT_OUT)/system/app/GalleryGoogle.apk
 endif
 
-ifneq ($(filter full_maguro full_toro,$(TARGET_PRODUCT)),)
+ifeq ($(filter full_maguro full_toro,$(TARGET_PRODUCT)),)
 PRODUCT_COPY_FILES += \
     vendor/google/killrom/system/app/tuna/GalleryGoogle.apk:$(PRODUCT_OUT)/system/app/GalleryGoogle.apk
+endif
+
+ifneq ($(filter killrom_maserati killrom_solana killrom_spyder killrom_targa killrom_umts_spyder,$(TARGET_PRODUCT)),)
+PRODUCT_COPY_FILES += \
+    vendor/google/killrom/system/app/Wallet.apk:$(PRODUCT_OUT)/system/app/Wallet.apk
 endif
 
 #permissions
