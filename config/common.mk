@@ -41,7 +41,7 @@ PRODUCT_COPY_FILES += \
     vendor/google/killrom/system/app/mako/GalleryGoogle.apk:$(PRODUCT_OUT)/system/app/GalleryGoogle.apk
 endif
 
-ifneq ($(filter full_maguro full_toro,$(TARGET_PRODUCT)),)
+ifeq ($(filter full_maguro full_toro,$(TARGET_PRODUCT)),)
 PRODUCT_COPY_FILES += \
     vendor/google/killrom/system/app/tuna/GenieWidget.apk:$(PRODUCT_OUT)/system/app/GenieWidget.apk \
     vendor/google/killrom/system/app/tuna/ChromeBookmarksSyncAdapter.apk:$(PRODUCT_OUT)/system/app/ChromeBookmarksSyncAdapter.apk \
