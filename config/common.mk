@@ -33,7 +33,6 @@ PRODUCT_COPY_FILES += \
     vendor/google/killrom/system/app/SetupWizard.apk:$(PRODUCT_OUT)/system/app/SetupWizard.apk \
     vendor/google/killrom/system/app/Talk.apk:$(PRODUCT_OUT)/system/app/Talk.apk \
     vendor/google/killrom/system/app/LatinImeDictionaryPack.apk:$(PRODUCT_OUT)/system/app/LatinImeDictionaryPack.apk \
-    vendor/google/killrom/system/app/Wallet.apk:$(PRODUCT_OUT)/system/app/Wallet.apk \
     vendor/google/killrom/system/app/VoiceSearchStub.apk:$(PRODUCT_OUT)/system/app/VoiceSearchStub.apk
 
 ifeq ($(TARGET_PRODUCT),full_mako)
@@ -41,28 +40,14 @@ PRODUCT_COPY_FILES += \
     vendor/google/killrom/system/app/mako/GalleryGoogle.apk:$(PRODUCT_OUT)/system/app/GalleryGoogle.apk
 endif
 
-ifeq ($(filter full_maguro full_toro,$(TARGET_PRODUCT)),)
+ifneq ($(filter full_maguro full_toro,$(TARGET_PRODUCT)),)
 PRODUCT_COPY_FILES += \
-    vendor/google/killrom/system/app/tuna/GenieWidget.apk:$(PRODUCT_OUT)/system/app/GenieWidget.apk \
-    vendor/google/killrom/system/app/tuna/ChromeBookmarksSyncAdapter.apk:$(PRODUCT_OUT)/system/app/ChromeBookmarksSyncAdapter.apk \
-    vendor/google/killrom/system/app/tuna/GoogleBackupTransport.apk:$(PRODUCT_OUT)/system/app/GoogleBackupTransport.apk \
-    vendor/google/killrom/system/app/tuna/GoogleCalendarSyncAdapter.apk:$(PRODUCT_OUT)/system/app/GoogleCalendarSyncAdapter.apk \
-    vendor/google/killrom/system/app/tuna/GoogleContactsSyncAdapter.apk:$(PRODUCT_OUT)/system/app/GoogleContactsSyncAdapter.apk \
-    vendor/google/killrom/system/app/tuna/GoogleFeedback.apk:$(PRODUCT_OUT)/system/app/GoogleFeedback.apk \
-    vendor/google/killrom/system/app/tuna/GmsCore.apk:$(PRODUCT_OUT)/system/app/GmsCore.apk \
-    vendor/google/killrom/system/app/tuna/GoogleLoginService.apk:$(PRODUCT_OUT)/system/app/GoogleLoginService.apk \
-    vendor/google/killrom/system/app/tuna/GooglePartnerSetup.apk:$(PRODUCT_OUT)/system/app/GooglePartnerSetup.apk \
-    vendor/google/killrom/system/app/tuna/GoogleServicesFramework.apk:$(PRODUCT_OUT)/system/app/GoogleServicesFramework.apk \
-    vendor/google/killrom/system/app/tuna/GoogleTTS.apk:$(PRODUCT_OUT)/system/app/MarketUpdater.apk \
-    vendor/google/killrom/system/app/tuna/LatinIME.apk:$(PRODUCT_OUT)/system/app/LatinIME.apk \
-    vendor/google/killrom/system/app/tuna/MediaUploader.apk:$(PRODUCT_OUT)/system/app/MediaUploader.apk \
-    vendor/google/killrom/system/app/tuna/NetworkLocation.apk:$(PRODUCT_OUT)/system/app/NetworkLocation.apk \
-    vendor/google/killrom/system/app/tuna/OneTimeInitializer.apk:$(PRODUCT_OUT)/system/app/OneTimeInitializer.apk \
-    vendor/google/killrom/system/app/tuna/SetupWizard.apk:$(PRODUCT_OUT)/system/app/SetupWizard.apk \
-    vendor/google/killrom/system/app/tuna/Talk.apk:$(PRODUCT_OUT)/system/app/Talk.apk \
-    vendor/google/killrom/system/app/tuna/LatinImeDictionaryPack.apk:$(PRODUCT_OUT)/system/app/LatinImeDictionaryPack.apk \
-    vendor/google/killrom/system/app/tuna/tuna/GalleryGoogle.apk:$(PRODUCT_OUT)/system/app/GalleryGoogle.apk \
-    vendor/google/killrom/system/app/tuna/VoiceSearchStub.apk:$(PRODUCT_OUT)/system/app/VoiceSearchStub.apk
+    vendor/google/killrom/system/app/tuna/GalleryGoogle.apk:$(PRODUCT_OUT)/system/app/GalleryGoogle.apk
+endif
+
+ifneq ($(filter killrom_maserati killrom_solana killrom_spyder killrom_targa killrom_umts_spyder,$(TARGET_PRODUCT)),)
+PRODUCT_COPY_FILES += \
+    vendor/google/killrom/system/app/Wallet.apk:$(PRODUCT_OUT)/system/app/Wallet.apk
 endif
 
 #permissions
