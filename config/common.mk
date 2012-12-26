@@ -34,12 +34,10 @@ PRODUCT_COPY_FILES += \
     vendor/google/killrom/system/app/LatinImeDictionaryPack.apk:$(PRODUCT_OUT)/system/app/LatinImeDictionaryPack.apk \
     vendor/google/killrom/system/app/VoiceSearchStub.apk:$(PRODUCT_OUT)/system/app/VoiceSearchStub.apk
 
-ifeq ($(TARGET_PRODUCT),full_mako)
+ifeq ($(TARGET_PRODUCT),killr_mako)
 PRODUCT_COPY_FILES += \
     vendor/google/killrom/system/app/mako/GalleryGoogle.apk:$(PRODUCT_OUT)/system/app/GalleryGoogle.apk \
     vendor/google/killrom/system/app/mako/LatinIME.apk:$(PRODUCT_OUT)/system/app/LatinIME.apk
-else
-    vendor/google/killrom/system/app/LatinIME.apk:$(PRODUCT_OUT)/system/app/LatinIME.apk \
 endif
 
 ifneq ($(filter full_maguro full_toro,$(TARGET_PRODUCT)),)
