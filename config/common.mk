@@ -3,41 +3,43 @@
 #apps
 PRODUCT_COPY_FILES += \
     vendor/google/killrom/system/app/CalendarProvider.apk:$(PRODUCT_OUT)/system/app/CalendarProvider.apk \
-    vendor/google/killrom/system/app/OccamQuickOffice.apk:$(PRODUCT_OUT)/system/app/OccamQuickOffice.apk \
-    vendor/google/killrom/system/app/StreetView.apk:$(PRODUCT_OUT)/system/app/StreetView.apk \
-    vendor/google/killrom/system/app/Maps.apk:$(PRODUCT_OUT)/system/app/Maps.apk \
     vendor/google/killrom/system/app/Calendar.apk:$(PRODUCT_OUT)/system/app/Calendar.apk \
-    vendor/google/killrom/system/app/Music2.apk:$(PRODUCT_OUT)/system/app/Music2.apk \
-    vendor/google/killrom/system/app/GoogleEars.apk:$(PRODUCT_OUT)/system/app/GoogleEars.apk \
-    vendor/google/killrom/system/app/GmsCore.apk:$(PRODUCT_OUT)/system/app/GmsCore.apk \
-    vendor/google/killrom/system/app/FaceLock.apk:$(PRODUCT_OUT)/system/app/FaceLock.apk \
-    vendor/google/killrom/system/app/Gmail.apk:$(PRODUCT_OUT)/system/app/Gmail.apk \
+    vendor/google/killrom/system/app/ChromeBookmarksSyncAdapter.apk:$(PRODUCT_OUT)/system/app/ChromeBookmarksSyncAdapter.apk \
     vendor/google/killrom/system/app/EmailGoogle.apk:$(PRODUCT_OUT)/system/app/EmailGoogle.apk \
     vendor/google/killrom/system/app/Exchange2Google.apk:$(PRODUCT_OUT)/system/app/Exchange2Google.apk \
+    vendor/google/killrom/system/app/FaceLock.apk:$(PRODUCT_OUT)/system/app/FaceLock.apk \
     vendor/google/killrom/system/app/GenieWidget.apk:$(PRODUCT_OUT)/system/app/GenieWidget.apk \
-    vendor/google/killrom/system/app/ChromeBookmarksSyncAdapter.apk:$(PRODUCT_OUT)/system/app/ChromeBookmarksSyncAdapter.apk \
+    vendor/google/killrom/system/app/Gmail.apk:$(PRODUCT_OUT)/system/app/Gmail.apk \
+    vendor/google/killrom/system/app/GmsCore.apk:$(PRODUCT_OUT)/system/app/GmsCore.apk \
     vendor/google/killrom/system/app/GoogleBackupTransport.apk:$(PRODUCT_OUT)/system/app/GoogleBackupTransport.apk \
     vendor/google/killrom/system/app/GoogleCalendarSyncAdapter.apk:$(PRODUCT_OUT)/system/app/GoogleCalendarSyncAdapter.apk \
     vendor/google/killrom/system/app/GoogleContactsSyncAdapter.apk:$(PRODUCT_OUT)/system/app/GoogleContactsSyncAdapter.apk \
+    vendor/google/killrom/system/app/GoogleEars.apk:$(PRODUCT_OUT)/system/app/GoogleEars.apk \
     vendor/google/killrom/system/app/GoogleFeedback.apk:$(PRODUCT_OUT)/system/app/GoogleFeedback.apk \
     vendor/google/killrom/system/app/GoogleLoginService.apk:$(PRODUCT_OUT)/system/app/GoogleLoginService.apk \
     vendor/google/killrom/system/app/GooglePartnerSetup.apk:$(PRODUCT_OUT)/system/app/GooglePartnerSetup.apk \
-    vendor/google/killrom/system/app/QuickSearchBox.apk:$(PRODUCT_OUT)/system/app/QuickSearchBox.apk \
     vendor/google/killrom/system/app/GoogleServicesFramework.apk:$(PRODUCT_OUT)/system/app/GoogleServicesFramework.apk \
     vendor/google/killrom/system/app/GoogleTTS.apk:$(PRODUCT_OUT)/system/app/MarketUpdater.apk \
+    vendor/google/killrom/system/app/LatinImeDictionaryPack.apk:$(PRODUCT_OUT)/system/app/LatinImeDictionaryPack.apk \
+    vendor/google/killrom/system/app/Maps.apk:$(PRODUCT_OUT)/system/app/Maps.apk \
     vendor/google/killrom/system/app/MediaUploader.apk:$(PRODUCT_OUT)/system/app/MediaUploader.apk \
+    vendor/google/killrom/system/app/Music2.apk:$(PRODUCT_OUT)/system/app/Music2.apk \
     vendor/google/killrom/system/app/NetworkLocation.apk:$(PRODUCT_OUT)/system/app/NetworkLocation.apk \
     vendor/google/killrom/system/app/OneTimeInitializer.apk:$(PRODUCT_OUT)/system/app/OneTimeInitializer.apk \
     vendor/google/killrom/system/app/Phonesky.apk:$(PRODUCT_OUT)/system/app/Phonesky.apk \
+    vendor/google/killrom/system/app/QuickSearchBox.apk:$(PRODUCT_OUT)/system/app/QuickSearchBox.apk \
     vendor/google/killrom/system/app/SetupWizard.apk:$(PRODUCT_OUT)/system/app/SetupWizard.apk \
+    vendor/google/killrom/system/app/StreetView.apk:$(PRODUCT_OUT)/system/app/StreetView.apk \
     vendor/google/killrom/system/app/Talk.apk:$(PRODUCT_OUT)/system/app/Talk.apk \
-    vendor/google/killrom/system/app/LatinImeDictionaryPack.apk:$(PRODUCT_OUT)/system/app/LatinImeDictionaryPack.apk \
     vendor/google/killrom/system/app/VoiceSearchStub.apk:$(PRODUCT_OUT)/system/app/VoiceSearchStub.apk
 
 ifeq ($(TARGET_PRODUCT),killr_mako)
 PRODUCT_COPY_FILES += \
     vendor/google/killrom/system/app/mako/GalleryGoogle.apk:$(PRODUCT_OUT)/system/app/GalleryGoogle.apk \
-    vendor/google/killrom/system/app/mako/LatinIME.apk:$(PRODUCT_OUT)/system/app/LatinIME.apk
+    vendor/google/killrom/system/app/mako/LatinIME.apk:$(PRODUCT_OUT)/system/app/LatinIME.apk \
+    vendor/google/killrom/system/app/OccamQuickOffice.apk:$(PRODUCT_OUT)/system/app/OccamQuickOffice.apk \
+else
+    vendor/google/killrom/system/app/LatinIME.apk:$(PRODUCT_OUT)/system/app/LatinIME.apk \
 endif
 
 ifneq ($(filter full_maguro full_toro,$(TARGET_PRODUCT)),)
@@ -52,11 +54,11 @@ endif
 
 #permissions
 PRODUCT_COPY_FILES += \
-    vendor/google/killrom/system/etc/preferred-apps/google.xml:$(PRODUCT_OUT)/system/etc/preferred-apps/google.xml \
     vendor/google/killrom/system/etc/permissions/com.google.android.maps.xml:$(PRODUCT_OUT)/system/etc/permissions/com.google.android.maps.xml \
     vendor/google/killrom/system/etc/permissions/com.google.android.media.effects.xml:$(PRODUCT_OUT)/system/etc/permissions/com.google.android.media.effects.xml \
     vendor/google/killrom/system/etc/permissions/com.google.widevine.software.drm.xml:$(PRODUCT_OUT)/system/etc/permissions/com.google.widevine.software.drm.xml \
-    vendor/google/killrom/system/etc/permissions/features.xml:$(PRODUCT_OUT)/system/etc/permissions/features.xml
+    vendor/google/killrom/system/etc/permissions/features.xml:$(PRODUCT_OUT)/system/etc/permissions/features.xml \
+    vendor/google/killrom/system/etc/preferred-apps/google.xml:$(PRODUCT_OUT)/system/etc/preferred-apps/google.xml
 
 #framework
 PRODUCT_COPY_FILES += \
